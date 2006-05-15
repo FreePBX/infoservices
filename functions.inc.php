@@ -37,7 +37,7 @@ function infoservices_directory($c) {
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 	// Build the context
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,1,Wait(1)
-	$ext->add($id, $c, '', new ext_agi('directory,${DIR-CONTEXT},ext-local,${DIRECTORY:0:1}${DIRECTORY_OPTS}o')); // AGI
+	$ext->add($id, $c, '', new ext_agi('directory,${DIR-CONTEXT},from-did-direct,${DIRECTORY:0:1}${DIRECTORY_OPTS}o')); // AGI
 	$ext->add($id, $c, '', new ext_playback('vm-goodbye')); // $cmd,n,Playback(vm-goodbye)
 	$ext->add($id, $c, '', new ext_hangup('')); // hangup
 }
