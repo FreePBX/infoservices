@@ -4,7 +4,7 @@
 	<version>1.01</version>
 	<type>setup</type>
 	<category>Information</category>
-	<location>release/infoservices-1.0.tgz</location>
+	<location>release/infoservices-1.01.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
-	<md5sum>152631a4a536c15f711bb78b9b33ddb8</md5sum>
+	<md5sum>f98163207f2c95afff69f7df12066fd2</md5sum>
 </module>
