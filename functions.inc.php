@@ -61,7 +61,7 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_wait('1'));
 	$ext->add($id, $c, '', new ext_playback('info-about-last-call&telephone-number'));
 	$ext->add($id, $c, '', new ext_setvar('lastcaller', '${DB(CALLTRACE/${CALLERID(number)})}'));
-	$ext->add($id, $c, '', new ext_gotoif('$[ "${lastcaller}" = "" ]', 'noinfo'));
+	$ext->add($id, $c, '', new ext_gotoif('$[ $[ "${lastcaller}" = "" ] | $[ "${lastcaller}" = "unknown" ] ]', 'noinfo'));
 	$ext->add($id, $c, '', new ext_saydigits('${lastcaller}'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(digit)', '3'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(response)', '7'));
