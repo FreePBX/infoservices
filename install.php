@@ -30,11 +30,4 @@ $fcc->setDefault('*65');
 $fcc->update();
 unset($fcc);	
 
-$fcc = new featurecode('infoservices', 'gxppickup');
-$fcc->setDescription('BLF Call Pickup for GXP-2000');
-$fcc->setDefault('**');
-$fcc->update();
-unset($fcc);	
-
-
 ?>

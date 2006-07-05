@@ -125,9 +125,4 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
-
-function infoservices_gxppickup$c) {
-	global $ext;
-	
-	$id = "app-speakextennum";
 ?>
