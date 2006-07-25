@@ -30,6 +30,7 @@ function infoservices_get_config($engine) {
 
 function infoservices_directory($c) {
 	global $ext;
+	global $db;
 
 	$id = "app-directory"; // The context to be included. This must be unique.
 
@@ -41,6 +42,12 @@ function infoservices_directory($c) {
 	$ext->add($id, $c, '', new ext_agi('directory,${DIR-CONTEXT},from-did-direct,${DIRECTORY:0:1}${DIRECTORY_OPTS}o')); // AGI
 	$ext->add($id, $c, '', new ext_playback('vm-goodbye')); // $cmd,n,Playback(vm-goodbye)
 	$ext->add($id, $c, '', new ext_hangup('')); // hangup
+	$oxtn = $db->getOne("SELECT value from globals where variable='OPERATOR_XTN'");
+	if ($oxtn != '') {
+		$ext->add($id, 'o', '', new ext_goto('from-internal,${OPERATOR_XTN},1')); 
+	} else {
+		$ext->add($id, 'i', '', new ext_playback('privacy-incorrect'));
+	}
 }
 
 function infoservices_calltrace($c) {

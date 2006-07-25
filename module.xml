@@ -1,7 +1,7 @@
 <module>
 	<rawname>infoservices</rawname>
 	<name>Info Services</name>
-	<version>1.2.1</version>
+	<version>1.3</version>
 	<type>setup</type>
 	<category>Information</category>
 	<location>release/infoservices-1.2.1.tgz</location>
