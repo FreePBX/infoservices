@@ -3,7 +3,7 @@
 	<name>Info Services</name>
 	<version>1.3</version>
 	<type>setup</type>
-	<category>Information</category>
+	<category>Provides a Feature Code</category>
 	<location>release//2.2/infoservices-1.3.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
 	<md5sum>5c2e0968ddd0ed38dfe97dc6384d824d</md5sum>
