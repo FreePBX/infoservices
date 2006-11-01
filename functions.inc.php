@@ -109,9 +109,22 @@ function infoservices_speakingclock($c) {
 
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
+	$ext->add($id, $c, '', new ext_setvar('NumLoops','0'));
+	
+	$ext->add($id, $c, 'start', new ext_setvar('FutureTime','$[${EPOCH} + 11]'));  // 10 seconds to try this out
 	$ext->add($id, $c, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $c, '', new ext_sayunixtime(',,${TIMEFORMAT}'));
-	$ext->add($id, $c, '', new ext_playback('beep'));
+	$ext->add($id, $c, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+	$ext->add($id, $c, 'waitloop', new ext_set('TimeLeft', '$[${FutureTime} - ${EPOCH}]'));
+	$ext->add($id, $c, '', new ext_gotoif('$[${TimeLeft} < 1]','playbeep'));
+	//$ext->add($id, $c, '', new ext_saynumber('${TimeLeft}'));
+	$ext->add($id, $c, '', new ext_wait(1));
+	$ext->add($id, $c, '', new ext_goto('waitloop'));
+	$ext->add($id, $c, 'playbeep', new ext_playback('beep'));
+	$ext->add($id, $c, '', new ext_wait(5));
+	
+	$ext->add($id, $c, '', new ext_setvar('NumLoops','$[${NumLoops} + 1]'));
+	$ext->add($id, $c, '', new ext_gotoif('$[${NumLoops} < 5]','start')); // 5 is maximum number of times to repeat
+	$ext->add($id, $c, '', new ext_playback('goodbye'));
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
 
