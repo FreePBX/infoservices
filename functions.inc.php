@@ -113,7 +113,10 @@ function infoservices_speakingclock($c) {
 	
 	$ext->add($id, $c, 'start', new ext_setvar('FutureTime','$[${EPOCH} + 11]'));  // 10 seconds to try this out
 	$ext->add($id, $c, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $c, '', new ext_gotoif('$["${TIMEFORMAT}" = "kM"]','hr24format'));
 	$ext->add($id, $c, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+	$ext->add($id, $c, '', new ext_goto('waitloop'));
+	$ext->add($id, $c, 'hr24format', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $c, 'waitloop', new ext_set('TimeLeft', '$[${FutureTime} - ${EPOCH}]'));
 	$ext->add($id, $c, '', new ext_gotoif('$[${TimeLeft} < 1]','playbeep'));
 	//$ext->add($id, $c, '', new ext_saynumber('${TimeLeft}'));
