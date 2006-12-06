@@ -145,7 +145,7 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_playback('extension'));
 	$ext->add($id, $c, '', new ext_playback('number'));
 	$ext->add($id, $c, '', new ext_playback('is'));
-	$ext->add($id, $c, '', new ext_saydigits('${CALLERIDNUM}'));
+	$ext->add($id, $c, '', new ext_saydigits('${CALLERID(number)}'));
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
