@@ -140,6 +140,7 @@ function infoservices_speakextennum($c) {
 
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
 	$ext->add($id, $c, '', new ext_playback('your'));
 	$ext->add($id, $c, '', new ext_playback('extension'));
 	$ext->add($id, $c, '', new ext_playback('number'));
