@@ -11,7 +11,7 @@
 		*1.3.2* Fixed SpeakExtension - add macro-user-callerid
 		*1.3.1* Improved accuracy of speaking clock
 	</changelog>
-	<location>release/2.3/infoservices-1.3.3.tgz</location>
+	<location>release/2.3/infoservices-1.3.4.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
-	<md5sum>5f86814760f6c6a9e201570e663d6301</md5sum>
+	<md5sum>2a5e89a302b840cd6a9b33b0489bcec2</md5sum>
 </module>
