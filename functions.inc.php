@@ -63,11 +63,11 @@ function infoservices_calltrace($c) {
 	// I just reset these for ease of copying and pasting. 
 	$id = 'app-calltrace-perform';
 	$c = 's';
-	$ext->add($id, $c, '', new ext_macro('user-callerid')); 
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); 
 	$ext->add($id, $c, '', new ext_playback('info-about-last-call&telephone-number'));
-	$ext->add($id, $c, '', new ext_setvar('lastcaller', '${DB(CALLTRACE/${CALLERID(number)})}'));
+	$ext->add($id, $c, '', new ext_setvar('lastcaller', '${DB(CALLTRACE/${AMPUSER})}'));
 	$ext->add($id, $c, '', new ext_gotoif('$[ $[ "${lastcaller}" = "" ] | $[ "${lastcaller}" = "unknown" ] ]', 'noinfo'));
 	$ext->add($id, $c, '', new ext_saydigits('${lastcaller}'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(digit)', '3'));
@@ -145,7 +145,7 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_playback('extension'));
 	$ext->add($id, $c, '', new ext_playback('number'));
 	$ext->add($id, $c, '', new ext_playback('is'));
-	$ext->add($id, $c, '', new ext_saydigits('${CALLERID(number)}'));
+	$ext->add($id, $c, '', new ext_saydigits('${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
