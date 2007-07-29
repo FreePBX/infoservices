@@ -77,6 +77,8 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, 'noinfo', new ext_playback('from-unknown-caller'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall')); 
 	$ext->add($id, $c, 'fin', new ext_noop('Waiting for input'));
+	$ext->add($id, $c, '', new ext_waitexten(60));
+	$ext->add($id, $c, '', new ext_Playback('sorry-youre-having-problems&goodbye'));
 	$ext->add($id, '1', '', new ext_goto('1', '${lastcaller}', 'from-internal'));
 	$ext->add($id, 'i', '', new ext_playback('vm-goodbye')); 
 	$ext->add($id, 'i', '', new ext_macro('hangupcall')); 
