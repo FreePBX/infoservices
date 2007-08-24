@@ -5,9 +5,10 @@
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
-	<category>Provides a Feature Code</category>
+	<category>Internal Options &amp; Configuration</category>
 	<description>Provides a number of applications accessable by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
 	<changelog>
+		*1.3.5.2* changed categories
 		*1.3.5.1* bump for rc1
 		*1.3.5* #2145 add waitexten while waiting for user input, and make uninstallable
 		*1.3.4* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
@@ -16,5 +17,5 @@
 		*1.3.1* Improved accuracy of speaking clock
 	</changelog>
 	<location>release/2.3/infoservices-1.3.5.1.tgz</location>
-	<md5sum>f3a5d2f3274589afc58828734dd5002b</md5sum>
+	<md5sum>428df7844e8efbe6114920d39fbe5859</md5sum>
 </module>
