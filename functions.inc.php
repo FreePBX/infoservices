@@ -32,6 +32,8 @@ function infoservices_directory($c) {
 	global $ext;
 	global $db;
 
+	$oxtn = $db->getOne("SELECT value from globals where variable='OPERATOR_XTN'");	//this needs to be here!
+
 	$id = "app-directory"; // The context to be included. This must be unique.
 
 	// Start creating the dialplan
@@ -39,10 +41,9 @@ function infoservices_directory($c) {
 	// Build the context
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,1,Wait(1)
-	$ext->add($id, $c, '', new ext_agi('directory,${DIR-CONTEXT},from-did-direct,${DIRECTORY:0:1}${DIRECTORY_OPTS}'.(!empty($oxtn) ? 'o' : '') )); // AGI
+	$ext->add($id, $c, '', new ext_agi('directory,${DIR-CONTEXT},from-did-direct,${DIRECTORY:0:1}${DIRECTORY_OPTS}'.($oxtn != '' ? 'o' : '') ));
 	$ext->add($id, $c, '', new ext_playback('vm-goodbye')); // $cmd,n,Playback(vm-goodbye)
 	$ext->add($id, $c, '', new ext_hangup('')); // hangup
-	$oxtn = $db->getOne("SELECT value from globals where variable='OPERATOR_XTN'");
 	if ($oxtn != '') {
 		$ext->add($id, 'o', '', new ext_goto('from-internal,${OPERATOR_XTN},1')); 
 	} else {
