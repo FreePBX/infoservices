@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX infoservice\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-14 21:41+0200\n"
+"PO-Revision-Date: 2008-09-14 22:04+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: install.php:2
+msgid "Directory"
+msgstr "Katalog"
+
+#: install.php:9
+msgid "Call Trace"
+msgstr "Samtalsspårning"
+
+#: install.php:16
+msgid "Echo Test"
+msgstr "Eko-test"
+
+#: install.php:23
+msgid "Speaking Clock"
+msgstr "Talande klocka"
+
+#: install.php:30
+msgid "Speak Your Exten Number"
+msgstr "Läs upp din anknytning"
+
+#: module.xml:3
+msgid "Info Services"
+msgstr "Informationstjänster"
+
