@@ -1,37 +1,42 @@
 <?php
-$directory = _("Directory");
+//for translation only
+if (false) {
+_("Info Services");
+_("Directory");
+_("Call Trace");
+_("Echo Test");
+_("Speaking Clock");
+_("Speak Your Exten Number");
+}
+
 $fcc = new featurecode('infoservices', 'directory');
-$fcc->setDescription($directory);
+$fcc->setDescription('Directory');
 $fcc->setDefault('#');
 $fcc->update();
 unset($fcc);
 
-$calltrace = _("Call Trace");
 $fcc = new featurecode('infoservices', 'calltrace');
-$fcc->setDescription($calltrace);
+$fcc->setDescription('Call Trace');
 $fcc->setDefault('*69');
 $fcc->update();
 unset($fcc);	
 
-$echotest = _("Echo Test");
 $fcc = new featurecode('infoservices', 'echotest');
-$fcc->setDescription($echotest);
+$fcc->setDescription('Echo Test');
 $fcc->setDefault('*43');
 $fcc->update();
 unset($fcc);	
 
-$speakingclock = _("Speaking Clock");
 $fcc = new featurecode('infoservices', 'speakingclock');
-$fcc->setDescription($speakingclock);
+$fcc->setDescription('Speaking Clock');
 $fcc->setDefault('*60');
 $fcc->update();
 unset($fcc);	
 
-$speakextension = _("Speak Your Exten Number");
 $fcc = new featurecode('infoservices', 'speakextennum');
-$fcc->setDescription($speakextension);
+$fcc->setDescription('Speak Your Exten Number');
 $fcc->setDefault('*65');
 $fcc->update();
-unset($fcc);	
+unset($fcc);
 
 ?>
