@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: freePBX 2.5.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-17 11:16+0200\n"
+"PO-Revision-Date: 2009-05-05 15:29-0300\n"
+"Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
+"Language-Team: MidiVTS Team <team@midivts.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: install.php:2
+msgid "Directory"
+msgstr "Diretório"
+
+#: install.php:9
+msgid "Call Trace"
+msgstr "Rastreamento de Chamadas"
+
+#: install.php:16
+msgid "Echo Test"
+msgstr "Teste de Eco"
+
+#: install.php:23
+msgid "Speaking Clock"
+msgstr "Falando o horário"
+
+#: install.php:30
+msgid "Speak Your Exten Number"
+msgstr "Fale o seu número de extensão"
+
+#: module.xml
+msgid "Info Services"
+msgstr "Serviços de informação"
+
