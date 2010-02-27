@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,40 +28,32 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: infoservices/infoservices.i18n.php:5 infoservices/install.php:4
 msgid "Info Services"
 msgstr ""
 
-#: infoservices/infoservices.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: infoservices/infoservices.i18n.php:11
 msgid ""
 "Provides a number of applications accessible by feature codes: company "
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
 
-#: infoservices/install.php:5
 msgid "Directory"
 msgstr ""
 
-#: infoservices/install.php:6
 msgid "Call Trace"
 msgstr ""
 
-#: infoservices/install.php:7
 msgid "Echo Test"
 msgstr ""
 
-#: infoservices/install.php:8
 msgid "Speaking Clock"
 msgstr ""
 
-#: infoservices/install.php:9
 msgid "Speak Your Exten Number"
 msgstr ""
