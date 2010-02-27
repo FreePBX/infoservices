@@ -8,7 +8,7 @@
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
-	<description>Provides a number of applications accessable by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
+	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
 	<changelog>
 		*2.6.0.1* localizations
 		*2.6.0.0* localizations, misc
