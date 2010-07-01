@@ -47,7 +47,7 @@ function infoservices_directory($c) {
 	if ($oxtn != '') {
 		$ext->add($id, 'o', '', new ext_goto('from-internal,${OPERATOR_XTN},1')); 
 	} else {
-		$ext->add($id, 'i', '', new ext_playback('privacy-incorrect'));
+		$ext->add($id, 'o', '', new ext_playback('privacy-incorrect'));
 	}
 }
 
