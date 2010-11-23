@@ -12,6 +12,7 @@ _("Speak Your Exten Number");
 $fcc = new featurecode('infoservices', 'directory');
 $fcc->setDescription('Directory');
 $fcc->setDefault('#');
+$fcc->setProvideDest();
 $fcc->update();
 unset($fcc);
 
@@ -24,12 +25,14 @@ unset($fcc);
 $fcc = new featurecode('infoservices', 'echotest');
 $fcc->setDescription('Echo Test');
 $fcc->setDefault('*43');
+$fcc->setProvideDest();
 $fcc->update();
 unset($fcc);	
 
 $fcc = new featurecode('infoservices', 'speakingclock');
 $fcc->setDescription('Speaking Clock');
 $fcc->setDefault('*60');
+$fcc->setProvideDest();
 $fcc->update();
 unset($fcc);	
 
