@@ -7,7 +7,7 @@
 	<license>GPLv2+</license>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
-	<category>Apps</category>
+	<category>Applications</category>
 	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
 	<changelog>
 		*2.9.0.0* #4653
