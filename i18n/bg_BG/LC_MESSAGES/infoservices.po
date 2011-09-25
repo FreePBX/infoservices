@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:16+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2008-11-03 02:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -18,27 +18,29 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: install.php:2
-msgid "Directory"
-msgstr "Директория"
-
-#: install.php:9
-msgid "Call Trace"
-msgstr "Проследяване на Разговор"
-
-#: install.php:16
-msgid "Echo Test"
-msgstr "Ехо Тест"
-
-#: install.php:23
-msgid "Speaking Clock"
-msgstr "Казва Часа"
-
-#: install.php:30
-msgid "Speak Your Exten Number"
-msgstr "Продиктува Вашия Вътрешен Нмер"
-
-#: module.xml
 msgid "Info Services"
 msgstr "Информационни Услуги"
 
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+
+msgid "Directory"
+msgstr "Директория"
+
+msgid "Call Trace"
+msgstr "Проследяване на Разговор"
+
+msgid "Echo Test"
+msgstr "Ехо Тест"
+
+msgid "Speaking Clock"
+msgstr "Казва Часа"
+
+msgid "Speak Your Exten Number"
+msgstr "Продиктува Вашия Вътрешен Нмер"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:16+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2009-04-20 17:23+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,26 +28,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: install.php:2
+msgid "Info Services"
+msgstr "Services d'Informations"
+
+msgid "Applications"
+msgstr ""
+
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+
 msgid "Directory"
 msgstr "Répertoire"
 
-#: install.php:9
 msgid "Call Trace"
 msgstr "Trace d'Appel"
 
-#: install.php:16
 msgid "Echo Test"
 msgstr "Test d'Echo"
 
-#: install.php:23
 msgid "Speaking Clock"
 msgstr "Horloge Parlante"
 
-#: install.php:30
 msgid "Speak Your Exten Number"
 msgstr "Dit votre Numéro d'Extension"
-
-#: module.xml
-msgid "Info Services"
-msgstr "Services d'Informations"
