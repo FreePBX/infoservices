@@ -134,8 +134,8 @@ function infoservices_speakingclock($c) {
 	//
 	$id = "sub-hr24format";
 	$ex = 'i';
-	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $ex, '', new ext_return(''));
 
