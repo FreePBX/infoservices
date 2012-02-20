@@ -116,23 +116,53 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_setvar('NumLoops','0'));
 	
 	$ext->add($id, $c, 'start', new ext_setvar('FutureTime','$[${EPOCH} + 11]'));  // 10 seconds to try this out
-	$ext->add($id, $c, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $c, '', new ext_gotoif('$["${TIMEFORMAT}" = "kM"]','hr24format'));
-	$ext->add($id, $c, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
-	$ext->add($id, $c, '', new ext_goto('waitloop'));
-	$ext->add($id, $c, 'hr24format', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+	$ext->add($id, $c, '', new ext_gosubif('$["${TIMEFORMAT}"="kM"]','sub-hr24format,s,1','sub-hr12format,s,1'));
+
 	$ext->add($id, $c, 'waitloop', new ext_set('TimeLeft', '$[${FutureTime} - ${EPOCH}]'));
 	$ext->add($id, $c, '', new ext_gotoif('$[${TimeLeft} < 1]','playbeep'));
-	//$ext->add($id, $c, '', new ext_saynumber('${TimeLeft}'));
 	$ext->add($id, $c, '', new ext_wait(1));
 	$ext->add($id, $c, '', new ext_goto('waitloop'));
 	$ext->add($id, $c, 'playbeep', new ext_playback('beep'));
 	$ext->add($id, $c, '', new ext_wait(5));
-	
 	$ext->add($id, $c, '', new ext_setvar('NumLoops','$[${NumLoops} + 1]'));
 	$ext->add($id, $c, '', new ext_gotoif('$[${NumLoops} < 5]','start')); // 5 is maximum number of times to repeat
 	$ext->add($id, $c, '', new ext_playback('goodbye'));
 	$ext->add($id, $c, '', new ext_hangup(''));
+
+
+	// 24 hr format default if no language provided
+	//
+	$id = "sub-hr24format";
+	$ex = 'i';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// German specific language format
+	$ex = 'de';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+
+	// 12 hr format default if no language provided
+	//
+	$id = "sub-hr12format";
+	$ex = 'i';
+	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// German specific language format
+	$ex = 'de';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// To add another language follow the pattern done for German. You should also be able to use
+	// extensions_custom.conf for this
 }
 
 function infoservices_speakextennum($c) {
