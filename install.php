@@ -11,10 +11,9 @@ _("Speak Your Exten Number");
 }
 
 $fcc = new featurecode('infoservices', 'directory');
-$fcc->setDescription('Directory');
-$fcc->setDefault('#');
-$fcc->setProvideDest();
-$fcc->update();
+if ($fcc->getCode()) {
+	$fcc->delete();
+}
 unset($fcc);
 
 $fcc = new featurecode('infoservices', 'calltrace');
