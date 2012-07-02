@@ -10,6 +10,7 @@ _("Speaking Clock");
 _("Speak Your Exten Number");
 }
 
+//removed # to call directory in 2.10, this doesnt make sense with the current directory module
 $fcc = new featurecode('infoservices', 'directory');
 if ($fcc->getCode()) {
 	$fcc->delete();
