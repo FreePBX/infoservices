@@ -105,7 +105,52 @@ function infoservices_echotest($c) {
 }
 
 function infoservices_speakingclock($c) {
-	global $ext;
+	global $ext, $amp_conf;
+
+	// Generate the needed subroutine for the speaking clock and allow for different formats
+	// based on the channel language.
+	//
+	// To add another language follow the pattern done for German. You should also be able to use
+	// extensions_custom.conf for this.
+	//
+	switch ($amp_conf['TIMEFORMAT']) {
+	case '24 Hour Format':
+		// 24 hr format default if no language provided
+		//
+		$sub = "sub-hr24format";
+		$ex = 'i';
+		$ext->add($sub, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+		$ext->add($sub, $ex, '', new ext_return(''));
+
+		// German specific language format
+		$ex = 'de';
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+
+	break;
+
+	case '12 Hour Format':
+	default:
+
+		// 12 hr format default if no language provided
+		//
+		$sub = "sub-hr12format";
+		$ex = 'i';
+		$ext->add($sub, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+
+		// German specific language format
+		$ex = 'de';
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+	break;
+	}
 
 	$id = "app-speakingclock"; // The context to be included
 
@@ -116,7 +161,7 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_setvar('NumLoops','0'));
 	
 	$ext->add($id, $c, 'start', new ext_setvar('FutureTime','$[${EPOCH} + 11]'));  // 10 seconds to try this out
-	$ext->add($id, $c, '', new ext_gosubif('$["${TIMEFORMAT}"="kM"]','sub-hr24format,s,1','sub-hr12format,s,1'));
+	$ext->add($id, $c, '', new ext_gosub('1','s',$sub));
 
 	$ext->add($id, $c, 'waitloop', new ext_set('TimeLeft', '$[${FutureTime} - ${EPOCH}]'));
 	$ext->add($id, $c, '', new ext_gotoif('$[${TimeLeft} < 1]','playbeep'));
@@ -128,41 +173,6 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_gotoif('$[${NumLoops} < 5]','start')); // 5 is maximum number of times to repeat
 	$ext->add($id, $c, '', new ext_playback('goodbye'));
 	$ext->add($id, $c, '', new ext_hangup(''));
-
-
-	// 24 hr format default if no language provided
-	//
-	$id = "sub-hr24format";
-	$ex = 'i';
-	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
-	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
-	$ext->add($id, $ex, '', new ext_return(''));
-
-	// German specific language format
-	$ex = 'de';
-	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
-	$ext->add($id, $ex, '', new ext_return(''));
-
-
-	// 12 hr format default if no language provided
-	//
-	$id = "sub-hr12format";
-	$ex = 'i';
-	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
-	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
-	$ext->add($id, $ex, '', new ext_return(''));
-
-	// German specific language format
-	$ex = 'de';
-	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
-	$ext->add($id, $ex, '', new ext_return(''));
-
-	// To add another language follow the pattern done for German. You should also be able to use
-	// extensions_custom.conf for this
 }
 
 function infoservices_speakextennum($c) {
