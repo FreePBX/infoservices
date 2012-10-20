@@ -17,6 +17,6 @@
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4653
 	</changelog>
-	<location>release/2.10/infoservices-2.10.0.3.tgz</location>
-	<md5sum>3c8e74491d33dd4956f9eb0008d34ecf</md5sum>
+	<location>release/2.11/infoservices-2.11.0.0.tgz</location>
+	<md5sum>f4b4cd9ef880ee7ecf6855c74101c6a6</md5sum>
 </module>
