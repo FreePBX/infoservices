@@ -173,6 +173,41 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_gotoif('$[${NumLoops} < 5]','start')); // 5 is maximum number of times to repeat
 	$ext->add($id, $c, '', new ext_playback('goodbye'));
 	$ext->add($id, $c, '', new ext_hangup(''));
+
+
+	// 24 hr format default if no language provided
+	//
+	$id = "sub-hr24format";
+	$ex = 'en';
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// German specific language format
+	$ex = 'de';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+
+	// 12 hr format default if no language provided
+	//
+	$id = "sub-hr12format";
+	$ex = 'en';
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// German specific language format
+	$ex = 'de';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+	$ext->add($id, $ex, '', new ext_return(''));
+
+	// To add another language follow the pattern done for German. You should also be able to use
+	// extensions_custom.conf for this
 }
 
 function infoservices_speakextennum($c) {
