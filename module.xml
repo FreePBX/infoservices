@@ -15,4 +15,4 @@
 	</changelog>
 	<location>release/2.10/infoservices-2.10.0.0.tgz</location>
 	<md5sum>696fb91fe801852e7ffc41035f2869c0</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
