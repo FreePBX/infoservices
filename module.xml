@@ -15,6 +15,9 @@
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4653
 	</changelog>
+	<supported>
+		<version>2.10</version>
+	</supported>
 	<location>release/2.10/infoservices-2.10.0.2.tgz</location>
 	<md5sum>27d197642d183ded3c4ed4e1afcfba59</md5sum>
 </module>
