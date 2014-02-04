@@ -133,8 +133,8 @@ function infoservices_speakingclock($c) {
 	// 24 hr format default if no language provided
 	//
 	$id = "sub-hr24format";
-	$ex = 'i';
-	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+	$ex = 'en';
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $ex, '', new ext_return(''));
@@ -149,8 +149,8 @@ function infoservices_speakingclock($c) {
 	// 12 hr format default if no language provided
 	//
 	$id = "sub-hr12format";
-	$ex = 'i';
-	$ext->add($id, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+	$ex = 'en';
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
 	$ext->add($id, $ex, '', new ext_return(''));

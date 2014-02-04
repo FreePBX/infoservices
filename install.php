@@ -10,11 +10,11 @@ _("Speaking Clock");
 _("Speak Your Exten Number");
 }
 
+//removed # to call directory in 2.10, this doesnt make sense with the current directory module
 $fcc = new featurecode('infoservices', 'directory');
-$fcc->setDescription('Directory');
-$fcc->setDefault('#');
-$fcc->setProvideDest();
-$fcc->update();
+if ($fcc->getCode()) {
+	$fcc->delete();
+}
 unset($fcc);
 
 $fcc = new featurecode('infoservices', 'calltrace');
