@@ -99,6 +99,7 @@ function infoservices_echotest($c) {
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); 
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_playback('demo-echotest')); // $cmd,n,Macro(user-callerid)
 	$ext->add($id, $c, '', new ext_echo('')); 
@@ -158,6 +159,7 @@ function infoservices_speakingclock($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); 
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_setvar('NumLoops','0'));
