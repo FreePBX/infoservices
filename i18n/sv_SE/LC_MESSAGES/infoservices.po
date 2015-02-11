@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX infoservice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:58-0500\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,35 +30,54 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Info Services"
-msgstr "Informationstjänster"
-
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"Provides a number of applications accessible by feature codes: company "
-"directory, call trace (last call information), echo test, speaking clock, "
-"and speak current extension number."
-msgstr ""
-"Ger tillgång till ett flertal applikationer som kan nås med funktionskod: "
-"telefonkatalog, samtalsspårning (sista samtalet), talande klocka och "
-"uppläsning av anknytningsnummer"
-
-msgid "Directory"
-msgstr "Katalog"
-
+#: /usr/src/freepbx/infoservices/install.php:7
 msgid "Call Trace"
 msgstr "Samtalsspårning"
 
+#: /usr/src/freepbx/infoservices/install.php:6
+msgid "Directory"
+msgstr "Katalog"
+
+#: /usr/src/freepbx/infoservices/install.php:8
 msgid "Echo Test"
 msgstr "Eko-test"
 
+#: /usr/src/freepbx/infoservices/install.php:5
+msgid "Info Services"
+msgstr "Informationstjänster"
+
+#: /usr/src/freepbx/infoservices/install.php:10
+msgid "Speak Your Exten Number"
+msgstr "Läs upp din anknytning"
+
+#: /usr/src/freepbx/infoservices/install.php:9
 msgid "Speaking Clock"
 msgstr "Talande klocka"
 
-msgid "Speak Your Exten Number"
-msgstr "Läs upp din anknytning"
+#: /usr/src/freepbx/infoservices/install.php:61
+msgid "could not delete"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:56
+msgid "deleting TIMEFORMAT from globals.."
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:59
+msgid "done"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:55
+msgid "migrated TIMEFORMAT to Advanced Settings"
+msgstr ""
+
+#~ msgid ""
+#~ "Provides a number of applications accessible by feature codes: company "
+#~ "directory, call trace (last call information), echo test, speaking clock, "
+#~ "and speak current extension number."
+#~ msgstr ""
+#~ "Ger tillgång till ett flertal applikationer som kan nås med funktionskod: "
+#~ "telefonkatalog, samtalsspårning (sista samtalet), talande klocka och "
+#~ "uppläsning av anknytningsnummer"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"

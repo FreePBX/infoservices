@@ -20,37 +20,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Info Services"
-msgstr ""
-
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"Provides a number of applications accessible by feature codes: company "
-"directory, call trace (last call information), echo test, speaking clock, "
-"and speak current extension number."
-msgstr ""
-
-msgid "Directory"
-msgstr ""
-
+#: /usr/src/freepbx/infoservices/install.php:7
 msgid "Call Trace"
 msgstr ""
 
+#: /usr/src/freepbx/infoservices/install.php:6
+msgid "Directory"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:8
 msgid "Echo Test"
 msgstr ""
 
+#: /usr/src/freepbx/infoservices/install.php:5
+msgid "Info Services"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:10
+msgid "Speak Your Exten Number"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:9
 msgid "Speaking Clock"
 msgstr ""
 
-msgid "Speak Your Exten Number"
+#: /usr/src/freepbx/infoservices/install.php:61
+msgid "could not delete"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:56
+msgid "deleting TIMEFORMAT from globals.."
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:59
+msgid "done"
+msgstr ""
+
+#: /usr/src/freepbx/infoservices/install.php:55
+msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr ""
