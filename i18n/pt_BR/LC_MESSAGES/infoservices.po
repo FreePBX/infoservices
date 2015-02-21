@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:58-0500\n"
+"POT-Creation-Date: 2015-02-20 19:36-0500\n"
 "PO-Revision-Date: 2009-05-11 20:08-0300\n"
 "Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
 "Language-Team: MidiVTS Team <team@midivts.org>\n"
@@ -30,42 +30,65 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/infoservices/install.php:7
+#: infoservices.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: install.php:7
 msgid "Call Trace"
 msgstr "Rastreamento de Chamadas"
 
-#: /usr/src/freepbx/infoservices/install.php:6
+#: infoservices.i18n.php:9
+msgid "Dialplan and Operational"
+msgstr ""
+
+#: install.php:6
 msgid "Directory"
 msgstr "Diretório"
 
-#: /usr/src/freepbx/infoservices/install.php:8
+#: install.php:8
 msgid "Echo Test"
 msgstr "Teste de Eco"
 
-#: /usr/src/freepbx/infoservices/install.php:5
+#: infoservices.i18n.php:3 install.php:5
 msgid "Info Services"
 msgstr "Serviços de informação"
 
-#: /usr/src/freepbx/infoservices/install.php:10
+#: infoservices.i18n.php:5
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+
+#: install.php:10
 msgid "Speak Your Exten Number"
 msgstr "Faler número de seu ramal"
 
-#: /usr/src/freepbx/infoservices/install.php:9
+#: install.php:9
 msgid "Speaking Clock"
 msgstr "Falar o horário"
 
-#: /usr/src/freepbx/infoservices/install.php:61
+#: infoservices.i18n.php:7
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:11
+msgid "Time format to use with the Speaking Clock."
+msgstr ""
+
+#: install.php:61
 msgid "could not delete"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:56
+#: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:59
+#: install.php:59
 msgid "done"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:55
+#: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:58-0500\n"
+"POT-Creation-Date: 2015-02-20 19:36-0500\n"
 "PO-Revision-Date: 2009-01-31 11:58+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,42 +18,65 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/infoservices/install.php:7
+#: infoservices.i18n.php:4
+msgid "Applications"
+msgstr ""
+
+#: install.php:7
 msgid "Call Trace"
 msgstr "呼叫追踪"
 
-#: /usr/src/freepbx/infoservices/install.php:6
+#: infoservices.i18n.php:9
+msgid "Dialplan and Operational"
+msgstr ""
+
+#: install.php:6
 msgid "Directory"
 msgstr "目录"
 
-#: /usr/src/freepbx/infoservices/install.php:8
+#: install.php:8
 msgid "Echo Test"
 msgstr "回送测试"
 
-#: /usr/src/freepbx/infoservices/install.php:5
+#: infoservices.i18n.php:3 install.php:5
 msgid "Info Services"
 msgstr "信息服务"
 
-#: /usr/src/freepbx/infoservices/install.php:10
+#: infoservices.i18n.php:5
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+
+#: install.php:10
 msgid "Speak Your Exten Number"
 msgstr "播放你的分机号"
 
-#: /usr/src/freepbx/infoservices/install.php:9
+#: install.php:9
 msgid "Speaking Clock"
 msgstr "语音时钟"
 
-#: /usr/src/freepbx/infoservices/install.php:61
+#: infoservices.i18n.php:7
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:11
+msgid "Time format to use with the Speaking Clock."
+msgstr ""
+
+#: install.php:61
 msgid "could not delete"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:56
+#: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:59
+#: install.php:59
 msgid "done"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:55
+#: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr ""

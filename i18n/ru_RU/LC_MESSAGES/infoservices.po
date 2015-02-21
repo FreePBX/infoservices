@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:58-0500\n"
+"POT-Creation-Date: 2015-02-20 19:36-0500\n"
 "PO-Revision-Date: 2009-04-20 17:23+0100\n"
 "Last-Translator: Dmitry Kuznetsov <dk@postmet.ru>\n"
 "Language-Team: Russia <faq@postmet.com>\n"
@@ -28,54 +28,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /usr/src/freepbx/infoservices/install.php:7
+#: infoservices.i18n.php:4
+msgid "Applications"
+msgstr "Приложения"
+
+#: install.php:7
 msgid "Call Trace"
 msgstr "Трасировка вызова"
 
-#: /usr/src/freepbx/infoservices/install.php:6
+#: infoservices.i18n.php:9
+msgid "Dialplan and Operational"
+msgstr ""
+
+#: install.php:6
 msgid "Directory"
 msgstr "Каталог"
 
-#: /usr/src/freepbx/infoservices/install.php:8
+#: install.php:8
 msgid "Echo Test"
 msgstr "Эхо тест"
 
-#: /usr/src/freepbx/infoservices/install.php:5
+#: infoservices.i18n.php:3 install.php:5
 msgid "Info Services"
 msgstr "Информационные сервисы"
 
-#: /usr/src/freepbx/infoservices/install.php:10
+#: infoservices.i18n.php:5
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+"Предоставляет несколько приложений доступных через сервисные коды: каталог "
+"компании, трасировка вызова (информация о последнем вызове), Echo тест, "
+"говорящие часы и произношение вашего текущего внутреннего номера"
+
+#: install.php:10
 msgid "Speak Your Exten Number"
 msgstr "Произношение вашего внутреннего номера"
 
-#: /usr/src/freepbx/infoservices/install.php:9
+#: install.php:9
 msgid "Speaking Clock"
 msgstr "Говорящие часы"
 
-#: /usr/src/freepbx/infoservices/install.php:61
+#: infoservices.i18n.php:7
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:11
+msgid "Time format to use with the Speaking Clock."
+msgstr ""
+
+#: install.php:61
 msgid "could not delete"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:56
+#: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:59
+#: install.php:59
 msgid "done"
 msgstr ""
 
-#: /usr/src/freepbx/infoservices/install.php:55
+#: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid ""
-#~ "Provides a number of applications accessible by feature codes: company "
-#~ "directory, call trace (last call information), echo test, speaking clock, "
-#~ "and speak current extension number."
-#~ msgstr ""
-#~ "Предоставляет несколько приложений доступных через сервисные коды: "
-#~ "каталог компании, трасировка вызова (информация о последнем вызове), Echo "
-#~ "тест, говорящие часы и произношение вашего текущего внутреннего номера"
