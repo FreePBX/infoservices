@@ -15,18 +15,22 @@
 #
 # Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:36-0500\n"
-"PO-Revision-Date: 2009-04-20 17:23+0100\n"
-"Last-Translator: Dmitry Kuznetsov <dk@postmet.ru>\n"
-"Language-Team: Russia <faq@postmet.com>\n"
+"PO-Revision-Date: 2015-04-25 23:38+0200\n"
+"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"Language-Team: Russian "
+"<http://weblate.freepbx.org/projects/freepbx/infoservices/ru_RU/>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: infoservices.i18n.php:4
 msgid "Applications"
@@ -38,7 +42,7 @@ msgstr "Трасировка вызова"
 
 #: infoservices.i18n.php:9
 msgid "Dialplan and Operational"
-msgstr ""
+msgstr "План набора (диал-план) и функциональность"
 
 #: install.php:6
 msgid "Directory"
@@ -59,8 +63,8 @@ msgid ""
 "and speak current extension number."
 msgstr ""
 "Предоставляет несколько приложений доступных через сервисные коды: каталог "
-"компании, трасировка вызова (информация о последнем вызове), Echo тест, "
-"говорящие часы и произношение вашего текущего внутреннего номера"
+"компании, трассировка вызова (информация о последнем вызове), эхо тест, "
+"говорящие часы и произношение вашего текущего внутреннего номера."
 
 #: install.php:10
 msgid "Speak Your Exten Number"
@@ -72,24 +76,24 @@ msgstr "Говорящие часы"
 
 #: infoservices.i18n.php:7
 msgid "Speaking Clock Time Format"
-msgstr ""
+msgstr "Формат времени говорящих часов"
 
 #: infoservices.i18n.php:11
 msgid "Time format to use with the Speaking Clock."
-msgstr ""
+msgstr "Формат времени для использования с говорящими часами."
 
 #: install.php:61
 msgid "could not delete"
-msgstr ""
+msgstr "не удалось удалить"
 
 #: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
-msgstr ""
+msgstr "удаление TIMEFORMAT отовсюду.."
 
 #: install.php:59
 msgid "done"
-msgstr ""
+msgstr "готово"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr ""
+msgstr "TIMEFORMAT перенесен в расширенные настройки"
