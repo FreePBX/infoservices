@@ -20,19 +20,23 @@ msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:36-0500\n"
-"PO-Revision-Date: 2009-05-11 20:08-0300\n"
-"Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
-"Language-Team: MidiVTS Team <team@midivts.org>\n"
+"PO-Revision-Date: 2015-04-29 08:06+0200\n"
+"Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/infoservices/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: infoservices.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 #: install.php:7
 msgid "Call Trace"
@@ -40,7 +44,7 @@ msgstr "Rastreamento de Chamadas"
 
 #: infoservices.i18n.php:9
 msgid "Dialplan and Operational"
-msgstr ""
+msgstr "Plano de Discagem e Operacional"
 
 #: install.php:6
 msgid "Directory"
@@ -60,6 +64,9 @@ msgid ""
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
+"Fornece um número de aplicações acessíveis pelo código de recurso: diretório "
+"da empresa, rastreio de chamada (informações da ultima chamada), teste echo, "
+"hora certa e fala número do ramal atual."
 
 #: install.php:10
 msgid "Speak Your Exten Number"
@@ -71,24 +78,24 @@ msgstr "Falar o horário"
 
 #: infoservices.i18n.php:7
 msgid "Speaking Clock Time Format"
-msgstr ""
+msgstr "Formato Hora do Hora Certa"
 
 #: infoservices.i18n.php:11
 msgid "Time format to use with the Speaking Clock."
-msgstr ""
+msgstr "O formato de tempo a usar no Hora Certa."
 
 #: install.php:61
 msgid "could not delete"
-msgstr ""
+msgstr "não foi possível apagar"
 
 #: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
-msgstr ""
+msgstr "apagando TIMEFORMAT das globais.."
 
 #: install.php:59
 msgid "done"
-msgstr ""
+msgstr "feito"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr ""
+msgstr "migrando TIMEFORMAT das Configurações Avançadas"
