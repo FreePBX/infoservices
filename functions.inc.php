@@ -111,16 +111,16 @@ function infoservices_speakingclock($c) {
 	// Generate the needed subroutine for the speaking clock and allow for different formats
 	// based on the channel language.
 	//
-	// To add another language follow the pattern done for German. You should also be able to use
-	// extensions_custom.conf for this.
+	// To add another language follow the pattern done for German or Japanese. You can also
+	// see the Blacklist module for other ways of i18n'ing audio prompts.
 	//
 	switch ($amp_conf['TIMEFORMAT']) {
 	case '24 Hour Format':
 		// 24 hr format default if no language provided
-		//
 		$sub = "sub-hr24format";
-		$ex = 'i';
-		$ext->add($sub, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+		$ext->add($sub, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$sub.',${CHANNEL(language)},1)}]', $sub.',${CHANNEL(language)},1', $sub.',en,1'));
+
+		$ex = 'en';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 		$ext->add($sub, $ex, '', new ext_return(''));
@@ -131,6 +131,12 @@ function infoservices_speakingclock($c) {
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
 		$ext->add($sub, $ex, '', new ext_return(''));
 
+		// Japanese specific language format
+		$ex = 'ja';
+		$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+		$ext->add($id, $ex, '', new ext_return(''));
+
 	break;
 
 	case '12 Hour Format':
@@ -139,8 +145,9 @@ function infoservices_speakingclock($c) {
 		// 12 hr format default if no language provided
 		//
 		$sub = "sub-hr12format";
-		$ex = 'i';
-		$ext->add($sub, 's', '', new ext_goto('1', '${CHANNEL(language)}'));
+		$ext->add($sub, $ex, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$sub.',${CHANNEL(language)},1)}]', $sub.',${CHANNEL(language)},1', $sub.',en,1'));
+
+		$ex = 'en';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
 		$ext->add($sub, $ex, '', new ext_return(''));
@@ -149,6 +156,12 @@ function infoservices_speakingclock($c) {
 		$ex = 'de';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+
+		// Japanese specific language format
+		$ex = 'ja';
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,pIMS'));
 		$ext->add($sub, $ex, '', new ext_return(''));
 	break;
 	}
@@ -177,11 +190,12 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_hangup(''));
 
 
-	// 24 hr format default if no language provided
-	//
+	// 24 hr format
 	$id = "sub-hr24format";
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1','en,1'));
+
+	// English (default)
 	$ex = 'en';
-	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $ex, '', new ext_return(''));
@@ -192,12 +206,18 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
 	$ext->add($id, $ex, '', new ext_return(''));
 
+	// Japanese specific language format
+	$ex = 'ja';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+	$ext->add($id, $ex, '', new ext_return(''));
 
-	// 12 hr format default if no language provided
-	//
+	// 12 hour format
 	$id = "sub-hr12format";
+	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1','en,1'));
+
+	// English (default)
 	$ex = 'en';
-	$ext->add($id, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1',$ex.',1'));
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
 	$ext->add($id, $ex, '', new ext_return(''));
@@ -208,8 +228,11 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
 	$ext->add($id, $ex, '', new ext_return(''));
 
-	// To add another language follow the pattern done for German. You should also be able to use
-	// extensions_custom.conf for this
+	// Japanese specific language format
+	$ex = 'ja';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,pIMS'));
+	$ext->add($id, $ex, '', new ext_return(''));
 }
 
 function infoservices_speakextennum($c) {
@@ -219,9 +242,14 @@ function infoservices_speakextennum($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
-	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
-	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
-	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_answer(''));
+	$ext->add($id, $c, '', new ext_wait('1'));
+	$ext->add($id, $c, '', new ext_macro('user-callerid'));
+
+	// Check for languages
+	$ext->add($id, $c, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1','en,1'));
+
+	$c = "en";
 	$ext->add($id, $c, '', new ext_playback('your'));
 	$ext->add($id, $c, '', new ext_playback('extension'));
 	$ext->add($id, $c, '', new ext_playback('number'));
@@ -230,4 +258,4 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
-?>
+
