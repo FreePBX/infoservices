@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:36-0500\n"
 "PO-Revision-Date: 2009-04-20 17:23+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,29 +28,65 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Info Services"
-msgstr "Services d'Informations"
-
+#: infoservices.i18n.php:4
 msgid "Applications"
 msgstr ""
 
+#: install.php:7
+msgid "Call Trace"
+msgstr "Trace d'Appel"
+
+#: infoservices.i18n.php:9
+msgid "Dialplan and Operational"
+msgstr ""
+
+#: install.php:6
+msgid "Directory"
+msgstr "Répertoire"
+
+#: install.php:8
+msgid "Echo Test"
+msgstr "Test d'Echo"
+
+#: infoservices.i18n.php:3 install.php:5
+msgid "Info Services"
+msgstr "Services d'Informations"
+
+#: infoservices.i18n.php:5
 msgid ""
 "Provides a number of applications accessible by feature codes: company "
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
 
-msgid "Directory"
-msgstr "Répertoire"
+#: install.php:10
+msgid "Speak Your Exten Number"
+msgstr "Dit votre Numéro d'Extension"
 
-msgid "Call Trace"
-msgstr "Trace d'Appel"
-
-msgid "Echo Test"
-msgstr "Test d'Echo"
-
+#: install.php:9
 msgid "Speaking Clock"
 msgstr "Horloge Parlante"
 
-msgid "Speak Your Exten Number"
-msgstr "Dit votre Numéro d'Extension"
+#: infoservices.i18n.php:7
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:11
+msgid "Time format to use with the Speaking Clock."
+msgstr ""
+
+#: install.php:61
+msgid "could not delete"
+msgstr ""
+
+#: install.php:56
+msgid "deleting TIMEFORMAT from globals.."
+msgstr ""
+
+#: install.php:59
+msgid "done"
+msgstr ""
+
+#: install.php:55
+msgid "migrated TIMEFORMAT to Advanced Settings"
+msgstr ""

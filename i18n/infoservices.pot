@@ -1,26 +1,15 @@
 # This file is part of FreePBX.
 #
-#    FreePBX is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 2 of the License, or
-#    (at your option) any later version.
-#
-#    FreePBX is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+# For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for infoservices
-# Copyright (C) 2008, 2009, 2010 Bandwith.com
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:36-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,29 +17,66 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Info Services"
-msgstr ""
-
+#: infoservices.i18n.php:4
 msgid "Applications"
 msgstr ""
 
+#: install.php:7
+msgid "Call Trace"
+msgstr ""
+
+#: infoservices.i18n.php:9
+msgid "Dialplan and Operational"
+msgstr ""
+
+#: install.php:6
+msgid "Directory"
+msgstr ""
+
+#: install.php:8
+msgid "Echo Test"
+msgstr ""
+
+#: infoservices.i18n.php:3
+#: install.php:5
+msgid "Info Services"
+msgstr ""
+
+#: infoservices.i18n.php:5
 msgid ""
 "Provides a number of applications accessible by feature codes: company "
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
 
-msgid "Directory"
+#: install.php:10
+msgid "Speak Your Exten Number"
 msgstr ""
 
-msgid "Call Trace"
-msgstr ""
-
-msgid "Echo Test"
-msgstr ""
-
+#: install.php:9
 msgid "Speaking Clock"
 msgstr ""
 
-msgid "Speak Your Exten Number"
+#: infoservices.i18n.php:7
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:11
+msgid "Time format to use with the Speaking Clock."
+msgstr ""
+
+#: install.php:61
+msgid "could not delete"
+msgstr ""
+
+#: install.php:56
+msgid "deleting TIMEFORMAT from globals.."
+msgstr ""
+
+#: install.php:59
+msgid "done"
+msgstr ""
+
+#: install.php:55
+msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr ""
