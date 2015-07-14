@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:36-0500\n"
+"POT-Creation-Date: 2015-07-14 16:33-0400\n"
 "PO-Revision-Date: 2014-02-20 04:28+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/infoservices/ja/"
@@ -49,17 +49,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: infoservices.i18n.php:4
-msgid "Applications"
-msgstr "アプリケーション"
-
 #: install.php:7
 msgid "Call Trace"
 msgstr "電話履歴"
-
-#: infoservices.i18n.php:9
-msgid "Dialplan and Operational"
-msgstr "ダイヤルプランと操作"
 
 #: install.php:6
 msgid "Directory"
@@ -69,19 +61,9 @@ msgstr "ディレクトリー"
 msgid "Echo Test"
 msgstr "エコーテスト"
 
-#: infoservices.i18n.php:3 install.php:5
+#: install.php:5
 msgid "Info Services"
 msgstr "情報サービス"
-
-#: infoservices.i18n.php:5
-msgid ""
-"Provides a number of applications accessible by feature codes: company "
-"directory, call trace (last call information), echo test, speaking clock, "
-"and speak current extension number."
-msgstr ""
-"キーコードによって利用可能ないくつかのアプリケーションを提供します：会社ディ"
-"レクトリ、電話履歴の捜索（最終電話履歴）、エコー検査、音声クロック、音声内線"
-"番号。"
 
 #: install.php:10
 msgid "Speak Your Exten Number"
@@ -90,14 +72,6 @@ msgstr "音声内線番号"
 #: install.php:9
 msgid "Speaking Clock"
 msgstr "音声クロック"
-
-#: infoservices.i18n.php:7
-msgid "Speaking Clock Time Format"
-msgstr "音声クロックの時刻形式"
-
-#: infoservices.i18n.php:11
-msgid "Time format to use with the Speaking Clock."
-msgstr "音声クロックで使用する時刻の形式。"
 
 #: install.php:61
 msgid "could not delete"
@@ -114,3 +88,24 @@ msgstr "完了"
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr "TIMEFORMATを詳細設定に移行しました"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Dialplan and Operational"
+#~ msgstr "ダイヤルプランと操作"
+
+#~ msgid ""
+#~ "Provides a number of applications accessible by feature codes: company "
+#~ "directory, call trace (last call information), echo test, speaking clock, "
+#~ "and speak current extension number."
+#~ msgstr ""
+#~ "キーコードによって利用可能ないくつかのアプリケーションを提供します：会社"
+#~ "ディレクトリ、電話履歴の捜索（最終電話履歴）、エコー検査、音声クロック、音"
+#~ "声内線番号。"
+
+#~ msgid "Speaking Clock Time Format"
+#~ msgstr "音声クロックの時刻形式"
+
+#~ msgid "Time format to use with the Speaking Clock."
+#~ msgstr "音声クロックで使用する時刻の形式。"

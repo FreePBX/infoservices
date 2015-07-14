@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:36-0500\n"
+"POT-Creation-Date: 2015-07-14 16:33-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: infoservices.i18n.php:4
-msgid "Applications"
-msgstr ""
-
 #: install.php:7
 msgid "Call Trace"
-msgstr ""
-
-#: infoservices.i18n.php:9
-msgid "Dialplan and Operational"
 msgstr ""
 
 #: install.php:6
@@ -37,16 +29,8 @@ msgstr ""
 msgid "Echo Test"
 msgstr ""
 
-#: infoservices.i18n.php:3
 #: install.php:5
 msgid "Info Services"
-msgstr ""
-
-#: infoservices.i18n.php:5
-msgid ""
-"Provides a number of applications accessible by feature codes: company "
-"directory, call trace (last call information), echo test, speaking clock, "
-"and speak current extension number."
 msgstr ""
 
 #: install.php:10
@@ -55,14 +39,6 @@ msgstr ""
 
 #: install.php:9
 msgid "Speaking Clock"
-msgstr ""
-
-#: infoservices.i18n.php:7
-msgid "Speaking Clock Time Format"
-msgstr ""
-
-#: infoservices.i18n.php:11
-msgid "Time format to use with the Speaking Clock."
 msgstr ""
 
 #: install.php:61
