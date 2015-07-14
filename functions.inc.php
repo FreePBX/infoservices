@@ -99,10 +99,13 @@ function infoservices_echotest($c) {
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
-	$ext->add($id, $c, '', new ext_playback('infoservices/echo-test')); // $cmd,n,Macro(user-callerid)
-	$ext->add($id, $c, '', new ext_echo(''));
-	$ext->add($id, $c, '', new ext_playback('demo-echodone')); // $cmd,n,Playback(...)
-	$ext->add($id, $c, '', new ext_hangup('')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_background('demo-echotest,,,app-echo-test-echo')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_goto("1","1","app-echo-test-echo"));
+
+	$id = "app-echo-test-echo"; // The context to be included
+	$ext->add($id, "_[0-9#*]", '', new ext_echo(''));
+	$ext->add($id, "_[0-9#*]", '', new ext_playback('demo-echodone')); // $cmd,n,Playback(...)
+	$ext->add($id, "_[0-9#*]", '', new ext_hangup('')); // $cmd,n,Macro(user-callerid)
 }
 
 function infoservices_speakingclock($c) {
@@ -258,4 +261,3 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
 }
-
