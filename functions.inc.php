@@ -150,7 +150,7 @@ function infoservices_speakingclock($c) {
 		// 12 hr format default if no language provided
 		//
 		$sub = "sub-hr12format";
-		$ext->add($sub, $ex, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$sub.',${CHANNEL(language)},1)}]', $sub.',${CHANNEL(language)},1', $sub.',en,1'));
+		$ext->add($sub, 's', '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$sub.',${CHANNEL(language)},1)}]', $sub.',${CHANNEL(language)},1', $sub.',en,1'));
 
 		$ex = 'en';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
