@@ -252,7 +252,7 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
 
 	// Check for languages
-	$ext->add($id, $c, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', '${CHANNEL(language)},1','en,1'));
+	$ext->add($id, $c, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', $id.',${CHANNEL(language)},1',$id.',en,1'));
 
 	$c = "en";
 	$ext->add($id, $c, '', new ext_playback('your'));
