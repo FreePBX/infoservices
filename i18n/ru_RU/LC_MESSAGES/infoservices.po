@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 16:33-0400\n"
+"POT-Creation-Date: 2015-07-21 11:07+1000\n"
 "PO-Revision-Date: 2015-04-25 23:38+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -32,9 +32,17 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
+#: infoservices.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
 #: install.php:7
 msgid "Call Trace"
 msgstr "Трасировка вызова"
+
+#: infoservices.i18n.php:12
+msgid "Dialplan and Operational"
+msgstr "План набора (диал-план) и функциональность"
 
 #: install.php:6
 msgid "Directory"
@@ -44,9 +52,19 @@ msgstr "Каталог"
 msgid "Echo Test"
 msgstr "Эхо тест"
 
-#: install.php:5
+#: infoservices.i18n.php:4 install.php:5
 msgid "Info Services"
 msgstr "Информационные сервисы"
+
+#: infoservices.i18n.php:8
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+"Предоставляет несколько приложений доступных через сервисные коды: каталог "
+"компании, трассировка вызова (информация о последнем вызове), эхо тест, "
+"говорящие часы и произношение вашего текущего внутреннего номера."
 
 #: install.php:10
 msgid "Speak Your Exten Number"
@@ -55,6 +73,14 @@ msgstr "Произношение вашего внутреннего номер�
 #: install.php:9
 msgid "Speaking Clock"
 msgstr "Говорящие часы"
+
+#: infoservices.i18n.php:10
+msgid "Speaking Clock Time Format"
+msgstr "Формат времени говорящих часов"
+
+#: infoservices.i18n.php:14
+msgid "Time format to use with the Speaking Clock."
+msgstr "Формат времени для использования с говорящими часами."
 
 #: install.php:61
 msgid "could not delete"
@@ -71,24 +97,3 @@ msgstr "готово"
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr "TIMEFORMAT перенесен в расширенные настройки"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid "Dialplan and Operational"
-#~ msgstr "План набора (диал-план) и функциональность"
-
-#~ msgid ""
-#~ "Provides a number of applications accessible by feature codes: company "
-#~ "directory, call trace (last call information), echo test, speaking clock, "
-#~ "and speak current extension number."
-#~ msgstr ""
-#~ "Предоставляет несколько приложений доступных через сервисные коды: "
-#~ "каталог компании, трассировка вызова (информация о последнем вызове), эхо "
-#~ "тест, говорящие часы и произношение вашего текущего внутреннего номера."
-
-#~ msgid "Speaking Clock Time Format"
-#~ msgstr "Формат времени говорящих часов"
-
-#~ msgid "Time format to use with the Speaking Clock."
-#~ msgstr "Формат времени для использования с говорящими часами."
