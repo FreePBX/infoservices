@@ -262,4 +262,11 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_saydigits('${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
+	$c = "ja";
+	$ext->add($id, $c, '', new ext_playback('your'));
+	$ext->add($id, $c, '', new ext_playback('extension'));
+	$ext->add($id, $c, '', new ext_playback('jp-wa'));
+	$ext->add($id, $c, '', new ext_saydigits('${AMPUSER}'));
+	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
+	$ext->add($id, $c, '', new ext_hangup(''));
 }
