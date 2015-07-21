@@ -2,7 +2,7 @@
 	<rawname>infoservices</rawname>
 	<repo>standard</repo>
 	<name>Info Services</name>
-	<version>12.0.2</version>
+	<version>12.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -11,6 +11,7 @@
 	<category>Applications</category>
 	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
 	<changelog>
+		*12.0.3* FREEPBX-7738 - Complete internationalization.
 		*12.0.2* Use longer echo test as its language compatible, Allow people to exit out of the echo test by hitting keys
 		*12.0.1* FREEPBX-7368 Use 5 second echo test intro
 		*2.11.0.1* #6026
