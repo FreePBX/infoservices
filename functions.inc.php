@@ -130,6 +130,12 @@ function infoservices_speakingclock($c) {
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 		$ext->add($sub, $ex, '', new ext_return(''));
 
+		// French specific language format
+		$ex = 'fr';
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+		
 		// German specific language format
 		$ex = 'de';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
@@ -157,6 +163,12 @@ function infoservices_speakingclock($c) {
 		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
 		$ext->add($sub, $ex, '', new ext_return(''));
 
+		// French specific language format
+		$ex = 'fr';
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+		$ext->add($sub, $ex, '', new ext_return(''));
+		
 		// German specific language format
 		$ex = 'de';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
@@ -205,6 +217,12 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $ex, '', new ext_return(''));
 
+	// French specific language format
+	$ex = 'fr';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+	$ext->add($id, $ex, '', new ext_return(''));
+	
 	// German specific language format
 	$ex = 'de';
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
@@ -227,6 +245,12 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
 	$ext->add($id, $ex, '', new ext_return(''));
 
+	// French specific language format
+	$ex = 'fr';
+	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IMSp'));
+	$ext->add($id, $ex, '', new ext_return(''));
+	
 	// German specific language format
 	$ex = 'de';
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
@@ -254,6 +278,7 @@ function infoservices_speakextennum($c) {
 	// Check for languages
 	$ext->add($id, $c, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', $id.',${CHANNEL(language)},1',$id.',en,1'));
 
+	// English
 	$c = "en";
 	$ext->add($id, $c, '', new ext_playback('your'));
 	$ext->add($id, $c, '', new ext_playback('extension'));
@@ -262,6 +287,17 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_saydigits('${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_hangup(''));
+	
+	// French
+	$c = "fr";
+	$ext->add($id, $c, '', new ext_playback('your'));
+	$ext->add($id, $c, '', new ext_playback('extension'));
+	$ext->add($id, $c, '', new ext_playback('is2'));
+	$ext->add($id, $c, '', new ext_saydigits('${AMPUSER}'));
+	$ext->add($id, $c, '', new ext_wait('2')); // $cmd,n,Wait(1)
+	$ext->add($id, $c, '', new ext_hangup(''));
+	
+	// Japanese
 	$c = "ja";
 	$ext->add($id, $c, '', new ext_playback('your'));
 	$ext->add($id, $c, '', new ext_playback('extension'));
