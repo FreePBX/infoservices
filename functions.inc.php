@@ -67,6 +67,9 @@ function infoservices_calltrace($c) {
 	// I just reset these for ease of copying and pasting.
 	$id = 'app-calltrace-perform';
 	$c = 's';
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Call Trace")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
@@ -98,6 +101,9 @@ function infoservices_echotest($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Echo Test")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
@@ -187,6 +193,9 @@ function infoservices_speakingclock($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Speaking Clock")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
@@ -273,6 +282,9 @@ function infoservices_speakextennum($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Speak Extension")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
