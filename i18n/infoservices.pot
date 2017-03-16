@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for infoservices
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 10:34-0700\n"
+"POT-Creation-Date: 2017-03-15 18:30-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,63 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: infoservices.i18n.php:6
+msgid "Applications"
+msgstr ""
+
+#: functions.inc.php:71
+#: infoservices.i18n.php:16
 #: install.php:7
 msgid "Call Trace"
+msgstr ""
+
+#: infoservices.i18n.php:12
+msgid "Dialplan and Operational"
 msgstr ""
 
 #: install.php:6
 msgid "Directory"
 msgstr ""
 
+#: functions.inc.php:105
+#: infoservices.i18n.php:18
 #: install.php:8
 msgid "Echo Test"
 msgstr ""
 
+#: infoservices.i18n.php:4
 #: install.php:5
 msgid "Info Services"
 msgstr ""
 
+#: infoservices.i18n.php:8
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+
+#: functions.inc.php:286
+msgid "Speak Extension"
+msgstr ""
+
+#: infoservices.i18n.php:20
 #: install.php:10
 msgid "Speak Your Exten Number"
 msgstr ""
 
+#: functions.inc.php:197
+#: infoservices.i18n.php:22
 #: install.php:9
 msgid "Speaking Clock"
+msgstr ""
+
+#: infoservices.i18n.php:10
+msgid "Speaking Clock Time Format"
+msgstr ""
+
+#: infoservices.i18n.php:14
+msgid "Time format to use with the Speaking Clock."
 msgstr ""
 
 #: install.php:61

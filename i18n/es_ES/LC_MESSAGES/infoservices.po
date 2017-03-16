@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - infoservices module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-29 10:34-0700\n"
+"POT-Creation-Date: 2017-03-15 18:30-0700\n"
 "PO-Revision-Date: 2015-03-24 23:04+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -17,29 +17,60 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: install.php:7
+#: infoservices.i18n.php:6
+msgid "Applications"
+msgstr "Aplicaciones"
+
+#: functions.inc.php:71 infoservices.i18n.php:16 install.php:7
 msgid "Call Trace"
 msgstr "Traza de la llamada"
+
+#: infoservices.i18n.php:12
+msgid "Dialplan and Operational"
+msgstr "Plan de Marcación y Operacional"
 
 #: install.php:6
 msgid "Directory"
 msgstr "Directorio"
 
-#: install.php:8
+#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Prueba de eco"
 
-#: install.php:5
+#: infoservices.i18n.php:4 install.php:5
 msgid "Info Services"
 msgstr "Servicios de información"
 
-#: install.php:10
+#: infoservices.i18n.php:8
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+"Proporciona una serie de aplicaciones accesibles mediante códigos de "
+"función: Directorio de empresas, la localización de llamada (última "
+"información de la llamada), la prueba de eco, reloj de habla, y número "
+"hablado de la extensión actual."
+
+#: functions.inc.php:286
+msgid "Speak Extension"
+msgstr ""
+
+#: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
 msgstr "Decir número de extensión"
 
-#: install.php:9
+#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Decir fecha y hora"
+
+#: infoservices.i18n.php:10
+msgid "Speaking Clock Time Format"
+msgstr "Formato del Reloj hablado"
+
+#: infoservices.i18n.php:14
+msgid "Time format to use with the Speaking Clock."
+msgstr "Formato de tiempo usado en reloj hablado."
 
 #: install.php:61
 msgid "could not delete"
@@ -56,25 +87,3 @@ msgstr "hecho"
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
 msgstr "migrando TIMEFORMAT a configuración avanzada"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
-
-#~ msgid "Dialplan and Operational"
-#~ msgstr "Plan de Marcación y Operacional"
-
-#~ msgid ""
-#~ "Provides a number of applications accessible by feature codes: company "
-#~ "directory, call trace (last call information), echo test, speaking clock, "
-#~ "and speak current extension number."
-#~ msgstr ""
-#~ "Proporciona una serie de aplicaciones accesibles mediante códigos de "
-#~ "función: Directorio de empresas, la localización de llamada (última "
-#~ "información de la llamada), la prueba de eco, reloj de habla, y número "
-#~ "hablado de la extensión actual."
-
-#~ msgid "Speaking Clock Time Format"
-#~ msgstr "Formato del Reloj hablado"
-
-#~ msgid "Time format to use with the Speaking Clock."
-#~ msgstr "Formato de tiempo usado en reloj hablado."
