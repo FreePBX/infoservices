@@ -79,7 +79,7 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_saydigits('${lastcaller}'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(digit)', '3'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(response)', '7'));
-	$ext->add($id, $c, '', new ext_background('to-call-this-number&press-1'));
+	$ext->add($id, $c, '', new ext_background('to-call-this-number&press&digits/1'));
 	$ext->add($id, $c, '', new ext_goto('fin'));
 	$ext->add($id, $c, 'noinfo', new ext_playback('from-unknown-caller'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
@@ -133,7 +133,7 @@ function infoservices_speakingclock($c) {
 
 		$ex = 'en';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
-		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'vm-and\\\' S \\\'seconds\\\''));
 		$ext->add($sub, $ex, '', new ext_return(''));
 
 		// French specific language format
@@ -166,7 +166,7 @@ function infoservices_speakingclock($c) {
 
 		$ex = 'en';
 		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
-		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'vm-and\\\' S \\\'seconds\\\' p'));
 		$ext->add($sub, $ex, '', new ext_return(''));
 
 		// French specific language format
@@ -225,7 +225,7 @@ function infoservices_speakingclock($c) {
 	// English (default)
 	$ex = 'en';
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'and\\\' S \\\'seconds\\\''));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kM \\\'vm-and\\\' S \\\'seconds\\\''));
 	$ext->add($id, $ex, '', new ext_return(''));
 
 	// French specific language format
@@ -253,7 +253,7 @@ function infoservices_speakingclock($c) {
 	// English (default)
 	$ex = 'en';
 	$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'and\\\' S \\\'seconds\\\' p'));
+	$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,IM \\\'vm-and\\\' S \\\'seconds\\\' p'));
 	$ext->add($id, $ex, '', new ext_return(''));
 
 	// French specific language format
