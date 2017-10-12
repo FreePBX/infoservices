@@ -79,7 +79,7 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_saydigits('${lastcaller}'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(digit)', '3'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(response)', '7'));
-	$ext->add($id, $c, '', new ext_background('to-call-this-number&press&digits/1'));
+	$ext->add($id, $c, '', new ext_background('to-call-this-number&vm-press&digits/1'));
 	$ext->add($id, $c, '', new ext_goto('fin'));
 	$ext->add($id, $c, 'noinfo', new ext_playback('from-unknown-caller'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
