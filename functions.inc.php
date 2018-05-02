@@ -150,9 +150,9 @@ function infoservices_speakingclock($c) {
 
 		// Japanese specific language format
 		$ex = 'ja';
-		$ext->add($id, $ex, '', new ext_playback('at-tone-time-exactly'));
-		$ext->add($id, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
-		$ext->add($id, $ex, '', new ext_return(''));
+		$ext->add($sub, $ex, '', new ext_playback('at-tone-time-exactly'));
+		$ext->add($sub, $ex, '', new ext_sayunixtime('${FutureTime},,kMS'));
+		$ext->add($sub, $ex, '', new ext_return(''));
 
 	break;
 
