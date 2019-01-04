@@ -73,27 +73,27 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
+	$ext->add($id, $c, '', new ext_setvar('INVALID_LOOPCOUNT', 0));
 	$ext->add($id, $c, '', new ext_playback('info-about-last-call&telephone-number'));
 	$ext->add($id, $c, '', new ext_setvar('lastcaller', '${DB(CALLTRACE/${AMPUSER})}'));
 	$ext->add($id, $c, '', new ext_gotoif('$[ $[ "${lastcaller}" = "" ] | $[ "${lastcaller}" = "unknown" ] ]', 'noinfo'));
 	$ext->add($id, $c, '', new ext_saydigits('${lastcaller}'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(digit)', '3'));
 	$ext->add($id, $c, '', new ext_setvar('TIMEOUT(response)', '7'));
-	$ext->add($id, $c, '', new ext_background('to-call-this-number&vm-press&digits/1'));
+	$ext->add($id, $c, 'repeatoption', new ext_set('INVALID_LOOPCOUNT', '$[${INVALID_LOOPCOUNT}+1]'));
+	$ext->add($id, $c, '', new ext_read('EXT', 'to-call-this-number&vm-press&digits/1', '1', '', '0', 10));
+	$ext->add($id, $c, '', new ext_gotoif('$["${EXT}" = ""]','i,invalid'));
+	$ext->add($id, $c, '', new ext_gotoif('$["${DIALPLAN_EXISTS(app-calltrace-perform,${EXT},1)}" = "0"]','i,invalid:1,dial'));
 	$ext->add($id, $c, '', new ext_goto('fin'));
 	$ext->add($id, $c, 'noinfo', new ext_playback('from-unknown-caller'));
 	$ext->add($id, $c, '', new ext_macro('hangupcall'));
 	$ext->add($id, $c, 'fin', new ext_noop('Waiting for input'));
-	$ext->add($id, $c, '', new ext_waitexten(60));
-	$ext->add($id, $c, '', new ext_Playback('sorry-youre-having-problems&goodbye'));
-	$ext->add($id, '1', '', new ext_goto('1', '${lastcaller}', 'from-internal'));
+	$ext->add($id, '1', 'dial', new ext_goto('1', '${lastcaller}', 'from-internal'));
+	$ext->add($id, 'i', 'invalid', new ext_playback('no-valid-responce-pls-try-again'));
+	$ext->add($id, 'i', '',	new ext_gotoif('$[${INVALID_LOOPCOUNT} < 3 ]','s,repeatoption'));
 	$ext->add($id, 'i', '', new ext_playback('vm-goodbye'));
 	$ext->add($id, 'i', '', new ext_macro('hangupcall'));
-	$ext->add($id, 't', '', new ext_playback('vm-goodbye'));
-	$ext->add($id, 't', '', new ext_macro('hangupcall'));
-
 }
-
 function infoservices_echotest($c) {
 	global $ext;
 
