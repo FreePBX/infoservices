@@ -5,6 +5,7 @@ class Restore Extends Base\RestoreBase{
 	public function runRestore(){
 		$configs = $this->getConfigs();
 		$this->importFeatureCodes($configs['features']);
+		$this->importAdvancedSettings($configs['settings']);
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$this->restoreLegacyFeatureCodes($pdo);
