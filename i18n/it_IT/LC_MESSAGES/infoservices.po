@@ -2,20 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
-"Language-Team: Italian\n"
-"Language: \n"
+"POT-Creation-Date: 2017-03-15 18:30-0700\n"
+"PO-Revision-Date: 2018-05-29 10:53+0000\n"
+"Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
+"Language-Team: Italian <http://*/projects/freepbx/infoservices/it/>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.19.1\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
 #: infoservices.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Applicazioni"
 
 #: functions.inc.php:71 infoservices.i18n.php:16 install.php:7
 msgid "Call Trace"
@@ -23,7 +25,7 @@ msgstr "Ultima Chiamata"
 
 #: infoservices.i18n.php:12
 msgid "Dialplan and Operational"
-msgstr ""
+msgstr "Dialplan e operativo"
 
 #: install.php:6
 msgid "Directory"
@@ -43,10 +45,14 @@ msgid ""
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
+"Fornisce un numero di applicazioni accessibili tramite i codici funzione: "
+"directory dell'azienda, traccia di chiamata (ultime informazioni sulla "
+"chiamata), test eco, orologio parlante e parla il numero dell'interno "
+"corrente."
 
 #: functions.inc.php:286
 msgid "Speak Extension"
-msgstr ""
+msgstr "Parla Extension"
 
 #: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
@@ -58,24 +64,24 @@ msgstr "Data e Ora"
 
 #: infoservices.i18n.php:10
 msgid "Speaking Clock Time Format"
-msgstr ""
+msgstr "formato orario dell'orologio parlante"
 
 #: infoservices.i18n.php:14
 msgid "Time format to use with the Speaking Clock."
-msgstr ""
+msgstr "Formato orario da utilizzare con l'orologio parlante."
 
 #: install.php:61
 msgid "could not delete"
-msgstr ""
+msgstr "impossibile cancellare"
 
 #: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
-msgstr ""
+msgstr "eliminazione di TIMEFORMAT da globals .."
 
 #: install.php:59
 msgid "done"
-msgstr ""
+msgstr "fatto"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr ""
+msgstr "migrato TIMEFORMAT alle impostazioni avanzate"

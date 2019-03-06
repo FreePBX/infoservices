@@ -10,20 +10,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-02 23:20-0400\n"
-"PO-Revision-Date: 2015-10-12 00:00+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
-"infoservices/fa/>\n"
-"Language: fa\n"
+"PO-Revision-Date: 2019-01-25 19:45+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/infoservices/fa/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: infoservices.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "برنامه ها"
 
 #: functions.inc.php:71 infoservices.i18n.php:16 install.php:7
 msgid "Call Trace"
@@ -31,7 +30,7 @@ msgstr "ردیابی تماس"
 
 #: infoservices.i18n.php:12
 msgid "Dialplan and Operational"
-msgstr ""
+msgstr "dialplan and Operational"
 
 #: install.php:6
 msgid "Directory"
@@ -51,10 +50,13 @@ msgid ""
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
+"تعدادی از برنامه های قابل دسترسی توسط کدهای ویژگی را فراهم می کند: دایرکتوری "
+"شرکت، ردیابی تماس (آخرین اطلاعات تماس)، آزمون اکو، ساعت مکالمه، و صحبت کردن "
+"شماره تلفن همراه فعلی."
 
 #: functions.inc.php:286
 msgid "Speak Extension"
-msgstr ""
+msgstr "اعلان داخلی"
 
 #: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
@@ -66,11 +68,11 @@ msgstr "ساعت سخنگو"
 
 #: infoservices.i18n.php:10
 msgid "Speaking Clock Time Format"
-msgstr ""
+msgstr "اعلام ساعت فرمت زمان"
 
 #: infoservices.i18n.php:14
 msgid "Time format to use with the Speaking Clock."
-msgstr ""
+msgstr "فرمت زمان برای استفاده با ساعت بلندگو."
 
 #: install.php:61
 msgid "could not delete"
