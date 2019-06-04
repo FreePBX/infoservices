@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 18:30-0700\n"
-"PO-Revision-Date: 2019-05-03 14:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"PO-Revision-Date: 2019-06-05 13:00+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/infoservices/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -56,11 +56,11 @@ msgstr ""
 
 #: functions.inc.php:286
 msgid "Speak Extension"
-msgstr ""
+msgstr "Ansage der Nebenstelle"
 
 #: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
-msgstr ""
+msgstr "Sage Deine Nebenstellennummer"
 
 #: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
