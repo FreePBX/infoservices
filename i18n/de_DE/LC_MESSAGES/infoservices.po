@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 18:30-0700\n"
-"PO-Revision-Date: 2019-06-26 14:00+0000\n"
+"PO-Revision-Date: 2019-06-28 09:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/infoservices/de/>\n"
 "Language: de_DE\n"
@@ -38,11 +38,11 @@ msgstr "Verzeichnis"
 
 #: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
-msgstr "Echo Test"
+msgstr "Echotest"
 
 #: infoservices.i18n.php:4 install.php:5
 msgid "Info Services"
-msgstr "Info Dienste"
+msgstr "Infodienste"
 
 #: infoservices.i18n.php:8
 msgid ""
@@ -88,4 +88,4 @@ msgstr "erledigt"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr ""
+msgstr "TIMEFORMAT wurde in die erweiterten Einstellungen migriert"
