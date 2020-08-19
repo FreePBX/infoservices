@@ -2,7 +2,7 @@
 	<rawname>infoservices</rawname>
 	<repo>standard</repo>
 	<name>Info Services</name>
-	<version>15.0.2</version>
+	<version>15.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv2+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
@@ -10,7 +10,9 @@
 	<canuninstall>no</canuninstall>
 	<category>Applications</category>
 	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-InfoServices</more-info>
 	<changelog>
+		*15.0.3* Packaging of ver 15.0.3
 		*15.0.1* Add backup
 	</changelog>
 	<supported>
