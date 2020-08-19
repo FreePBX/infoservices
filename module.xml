@@ -10,6 +10,7 @@
 	<canuninstall>no</canuninstall>
 	<category>Applications</category>
 	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-InfoServices</more-info>
 	<changelog>
 		*13.0.1.4* FREEPBX-15366 Call Trace Feature code IVR issue 
 		*13.0.1.3* FREEPBX-17345 [InfoService] Undefined variable 
