@@ -10,6 +10,7 @@
 	<canuninstall>no</canuninstall>
 	<category>Applications</category>
 	<description>Provides a number of applications accessible by feature codes: company directory, call trace (last call information), echo test, speaking clock, and speak current extension number.</description>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Feature+Code+Descriptions#FeatureCodeDescriptions-InfoServices</more-info>
 	<changelog>
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
