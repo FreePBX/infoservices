@@ -10,15 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 18:30-0700\n"
-"PO-Revision-Date: 2018-07-04 10:52+0000\n"
-"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
+"PO-Revision-Date: 2019-11-25 16:34+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/infoservices/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: infoservices.i18n.php:6
 msgid "Applications"
@@ -38,11 +38,11 @@ msgstr "Verzeichnis"
 
 #: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
-msgstr "Echo Test"
+msgstr "Echotest"
 
 #: infoservices.i18n.php:4 install.php:5
 msgid "Info Services"
-msgstr "Info Dienste"
+msgstr "Infodienste"
 
 #: infoservices.i18n.php:8
 msgid ""
@@ -56,36 +56,36 @@ msgstr ""
 
 #: functions.inc.php:286
 msgid "Speak Extension"
-msgstr ""
+msgstr "Ansage der Nebenstelle"
 
 #: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
-msgstr ""
+msgstr "Sage Deine Nebenstellennummer"
 
 #: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
-msgstr ""
+msgstr "Zeitansage"
 
 #: infoservices.i18n.php:10
 msgid "Speaking Clock Time Format"
-msgstr ""
+msgstr "Zeitformat für die Zeitansage"
 
 #: infoservices.i18n.php:14
 msgid "Time format to use with the Speaking Clock."
-msgstr ""
+msgstr "Zeitformat, das für die Zeitansage genutzt werden soll."
 
 #: install.php:61
 msgid "could not delete"
-msgstr ""
+msgstr "konnte nicht gelöscht werden"
 
 #: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
-msgstr ""
+msgstr "TIMEFORMAT wird von den globalen Einstellungen gelöscht.."
 
 #: install.php:59
 msgid "done"
-msgstr ""
+msgstr "erledigt"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr ""
+msgstr "TIMEFORMAT wurde in die erweiterten Einstellungen migriert"
