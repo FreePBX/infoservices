@@ -40,7 +40,7 @@ function infoservices_directory($c) {
 	$id = "app-directory"; // The context to be included. This must be unique.
 
 	// Start creating the dialplan
-	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
+	$ext->addInclude('from-internal-additional', $id); 
 	// Build the context
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,1,Wait(1)
@@ -59,7 +59,7 @@ function infoservices_calltrace($c) {
 
 	$id = "app-calltrace"; // The context to be included
 
-	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
+	$ext->addInclude('from-internal-additional', $id); 
 
 	$ext->add($id, $c, '', new ext_goto('1', 's', 'app-calltrace-perform'));
 
@@ -72,7 +72,7 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
-	$ext->add($id, $c, '', new ext_macro('user-callerid'));
+	$ext->add($id, $c, '', new ext_gosub('1','s','sub-user-callerid'));
 	$ext->add($id, $c, '', new ext_setvar('INVALID_LOOPCOUNT', 0));
 	$ext->add($id, $c, '', new ext_playback('info-about-last-call&telephone-number'));
 	$ext->add($id, $c, '', new ext_setvar('lastcaller', '${DB(CALLTRACE/${AMPUSER})}'));
@@ -86,35 +86,34 @@ function infoservices_calltrace($c) {
 	$ext->add($id, $c, '', new ext_gotoif('$["${DIALPLAN_EXISTS(app-calltrace-perform,${EXT},1)}" = "0"]','i,invalid:1,dial'));
 	$ext->add($id, $c, '', new ext_goto('fin'));
 	$ext->add($id, $c, 'noinfo', new ext_playback('from-unknown-caller'));
-	$ext->add($id, $c, '', new ext_macro('hangupcall'));
+	$ext->add($id, $c, '', new ext_gosub('1','s','sub-hangupcall'));
 	$ext->add($id, $c, 'fin', new ext_noop('Waiting for input'));
 	$ext->add($id, '1', 'dial', new ext_goto('1', '${lastcaller}', 'from-internal'));
 	$ext->add($id, 'i', 'invalid', new ext_playback('no-valid-responce-pls-try-again'));
 	$ext->add($id, 'i', '',	new ext_gotoif('$[${INVALID_LOOPCOUNT} < 3 ]','s,repeatoption'));
 	$ext->add($id, 'i', '', new ext_playback('vm-goodbye'));
-	$ext->add($id, 'i', '', new ext_macro('hangupcall'));
+	$ext->add($id, 'i', '', new ext_gosub('1','s','sub-hangupcall'));
 }
 function infoservices_echotest($c) {
 	global $ext;
 
-	$id = "app-echo-test"; // The context to be included
+	$id = "app-echo-test";
 
-	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
+	$ext->addInclude('from-internal-additional', $id); 
 
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Echo Test")));
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
-	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
-	$ext->add($id, $c, '', new ext_macro('user-callerid'));
-	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
-	$ext->add($id, $c, '', new ext_background('demo-echotest,,,app-echo-test-echo')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_answer('')); 
+	$ext->add($id, $c, '', new ext_gosub('1','s','sub-user-callerid'));
+	$ext->add($id, $c, '', new ext_wait('1')); 
+	$ext->add($id, $c, '', new ext_background('demo-echotest,,,app-echo-test-echo'));
 	$ext->add($id, $c, '', new ext_goto("1","1","app-echo-test-echo"));
 
-	$id = "app-echo-test-echo"; // The context to be included
+	$id = "app-echo-test-echo"; 
 	$ext->add($id, "_[0-9#*]", '', new ext_echo(''));
 	$ext->add($id, "_[0-9#*]", '', new ext_playback('demo-echodone')); // $cmd,n,Playback(...)
-	$ext->add($id, "_[0-9#*]", '', new ext_hangup('')); // $cmd,n,Macro(user-callerid)
-}
+	$ext->add($id, "_[0-9#*]", '', new ext_hangup(''));
 
 function infoservices_speakingclock($c) {
 	global $ext, $amp_conf;
@@ -196,7 +195,7 @@ function infoservices_speakingclock($c) {
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Speaking Clock")));
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
-	$ext->add($id, $c, '', new ext_macro('user-callerid'));
+	$ext->add($id, $c, '', new ext_gosub('1','s','sub-user-callerid'));
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
 	$ext->add($id, $c, '', new ext_setvar('NumLoops','0'));
@@ -287,7 +286,7 @@ function infoservices_speakextennum($c) {
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
-	$ext->add($id, $c, '', new ext_macro('user-callerid'));
+	$ext->add($id, $c, '', new ext_gosub('1','s','sub-user-callerid'));
 
 	// Check for languages
 	$ext->add($id, $c, '', new ext_gotoif('$[${DIALPLAN_EXISTS('.$id.',${CHANNEL(language)},1)}]', $id.',${CHANNEL(language)},1',$id.',en,1'));
