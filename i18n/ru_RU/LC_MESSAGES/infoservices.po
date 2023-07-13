@@ -1,36 +1,23 @@
 # This file is part of FreePBX.
-#
-#    FreePBX is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 2 of the License, or
-#    (at your option) any later version.
-#
-#    FreePBX is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
-#
+# For licensing information, please see the file named LICENSE located in the module directory
+# FreePBX language template for infoservices
+# Copyright (C) 2008-2019 Sangoma Technologies, Inc.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Info Services\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
-"PO-Revision-Date: 2015-04-25 23:38+0200\n"
-"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"POT-Creation-Date: 2019-01-04 09:57+0530\n"
+"PO-Revision-Date: 2022-04-19 05:11+0000\n"
+"Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
-"infoservices/ru_RU/>\n"
+"infoservices/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: infoservices.i18n.php:6
 msgid "Applications"
@@ -38,11 +25,11 @@ msgstr "Приложения"
 
 #: functions.inc.php:71 infoservices.i18n.php:16 install.php:7
 msgid "Call Trace"
-msgstr "Трасировка вызова"
+msgstr "Трассировка вызова"
 
 #: infoservices.i18n.php:12
 msgid "Dialplan and Operational"
-msgstr "План набора (диал-план) и функциональность"
+msgstr "Диалплан и функциональность"
 
 #: install.php:6
 msgid "Directory"
@@ -50,11 +37,11 @@ msgstr "Каталог"
 
 #: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
-msgstr "Эхо тест"
+msgstr "Эхотест"
 
 #: infoservices.i18n.php:4 install.php:5
 msgid "Info Services"
-msgstr "Информационные сервисы"
+msgstr "Службы информации"
 
 #: infoservices.i18n.php:8
 msgid ""
@@ -62,17 +49,17 @@ msgid ""
 "directory, call trace (last call information), echo test, speaking clock, "
 "and speak current extension number."
 msgstr ""
-"Предоставляет несколько приложений доступных через сервисные коды: каталог "
-"компании, трассировка вызова (информация о последнем вызове), эхо тест, "
-"говорящие часы и произношение вашего текущего внутреннего номера."
+"Предоставляет ряд приложений, доступных по кодам функций: каталог компании, "
+"трассировка вызовов (информация о последнем вызове), эхо-тест, говорящие "
+"часы и текущий добавочный номер."
 
 #: functions.inc.php:286
 msgid "Speak Extension"
-msgstr ""
+msgstr "Произношение внутреннего номера"
 
 #: infoservices.i18n.php:20 install.php:10
 msgid "Speak Your Exten Number"
-msgstr "Произношение вашего внутреннего номера"
+msgstr "Проговаривает Ваш внутренний номер"
 
 #: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
@@ -84,15 +71,15 @@ msgstr "Формат времени говорящих часов"
 
 #: infoservices.i18n.php:14
 msgid "Time format to use with the Speaking Clock."
-msgstr "Формат времени для использования с говорящими часами."
+msgstr "Формат времени для использования говорящими часами."
 
 #: install.php:61
 msgid "could not delete"
-msgstr "не удалось удалить"
+msgstr "не может быть удалено"
 
 #: install.php:56
 msgid "deleting TIMEFORMAT from globals.."
-msgstr "удаление TIMEFORMAT отовсюду.."
+msgstr "удаление TIMEFORMAT из глобальных настроек.."
 
 #: install.php:59
 msgid "done"
@@ -100,4 +87,4 @@ msgstr "готово"
 
 #: install.php:55
 msgid "migrated TIMEFORMAT to Advanced Settings"
-msgstr "TIMEFORMAT перенесен в расширенные настройки"
+msgstr "перенос TIMEFORMAT в Расширенные настройки"
