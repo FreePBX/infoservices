@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2015-04-29 08:06+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -50,7 +50,7 @@ msgstr "Plano de Discagem e Operacional"
 msgid "Directory"
 msgstr "Diretório"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Teste de Eco"
 
@@ -68,7 +68,7 @@ msgstr ""
 "da empresa, rastreio de chamada (informações da ultima chamada), teste echo, "
 "hora certa e fala número do ramal atual."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Speak Your Exten Number"
 msgstr "Faler número de seu ramal"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Falar o horário"
 

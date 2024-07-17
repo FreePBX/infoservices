@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for infoservices
-# Copyright (C) 2008-2023 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2024 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:11+0000\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "Directory"
 msgstr ""
 
-#: functions.inc.php:105
+#: functions.inc.php:104
 #: infoservices.i18n.php:18
 #: install.php:8
 msgid "Echo Test"
@@ -54,7 +54,7 @@ msgid ""
 "and speak current extension number."
 msgstr ""
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Speak Your Exten Number"
 msgstr ""
 
-#: functions.inc.php:197
+#: functions.inc.php:196
 #: infoservices.i18n.php:22
 #: install.php:9
 msgid "Speaking Clock"

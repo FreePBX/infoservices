@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - infoservices module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 18:30-0700\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2018-07-06 17:53+0000\n"
 "Last-Translator: Elvita Crespo <ecrespo@sangoma.com>\n"
 "Language-Team: Spanish <http://*/projects/freepbx/infoservices/es/>\n"
@@ -32,7 +32,7 @@ msgstr "Plan de Marcación y Operacional"
 msgid "Directory"
 msgstr "Directorio"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Prueba de eco"
 
@@ -51,7 +51,7 @@ msgstr ""
 "información de la llamada), la prueba de eco, reloj de habla, y número "
 "hablado de la extensión actual."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr "Decir Extensión"
 
@@ -59,7 +59,7 @@ msgstr "Decir Extensión"
 msgid "Speak Your Exten Number"
 msgstr "Decir número de extensión"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Decir fecha y hora"
 

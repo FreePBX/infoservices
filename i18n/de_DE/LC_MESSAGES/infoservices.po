@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 18:30-0700\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2019-11-25 16:34+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/infoservices/de/>\n"
@@ -36,7 +36,7 @@ msgstr "Wählplan und Operational"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Echotest"
 
@@ -54,7 +54,7 @@ msgstr ""
 "werden kann: Unternehmensverzeichnis, Anrufverfolgung (Informationen zu "
 "letzten Anrufen), Echotest, Sprechzeit und aktuelle Nebenstellennummer."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr "Ansage der Nebenstelle"
 
@@ -62,7 +62,7 @@ msgstr "Ansage der Nebenstelle"
 msgid "Speak Your Exten Number"
 msgstr "Sage Deine Nebenstellennummer"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Zeitansage"
 

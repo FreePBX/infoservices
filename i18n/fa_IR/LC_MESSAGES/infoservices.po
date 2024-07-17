@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2019-01-25 19:45+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/infoservices/fa/>\n"
@@ -36,7 +36,7 @@ msgstr "dialplan and Operational"
 msgid "Directory"
 msgstr "دایرکتوری"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "تست Echo"
 
@@ -54,7 +54,7 @@ msgstr ""
 "شرکت، ردیابی تماس (آخرین اطلاعات تماس)، آزمون اکو، ساعت مکالمه، و صحبت کردن "
 "شماره تلفن همراه فعلی."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr "اعلان داخلی"
 
@@ -62,7 +62,7 @@ msgstr "اعلان داخلی"
 msgid "Speak Your Exten Number"
 msgstr "شماره داخلی خود را بگویید"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "ساعت سخنگو"
 

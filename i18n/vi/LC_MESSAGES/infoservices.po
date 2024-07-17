@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2017-07-07 20:01+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,7 +37,7 @@ msgstr "Kế hoạch quay số và tác vụ"
 msgid "Directory"
 msgstr "Danh mục"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Kiểm tra echo"
 
@@ -55,7 +55,7 @@ msgstr ""
 "theo dõi cuộc gọi (thông tin cuộc gọi gần nhất, kiểm tra echo, đồng hồ nói "
 "và số máy nhánh hiện tại."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr "Nói máy nhánh"
 
@@ -63,7 +63,7 @@ msgstr "Nói máy nhánh"
 msgid "Speak Your Exten Number"
 msgstr "Nói số máy nhánh của bạn"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Nói đồng hồ"
 
