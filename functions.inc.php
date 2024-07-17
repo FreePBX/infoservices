@@ -69,7 +69,6 @@ function infoservices_calltrace($c) {
 	$c = 's';
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
 	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Call Trace")));
-	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)',$c));
 	$ext->add($id, $c, '', new ext_answer(''));
 	$ext->add($id, $c, '', new ext_wait('1'));
 	$ext->add($id, $c, '', new ext_macro('user-callerid'));
