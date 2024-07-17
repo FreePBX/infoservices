@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Directory"
 msgstr ""
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr ""
 
@@ -60,7 +60,7 @@ msgid ""
 "and speak current extension number."
 msgstr ""
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Speak Your Exten Number"
 msgstr ""
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr ""
 

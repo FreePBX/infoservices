@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2021-09-22 06:50+0000\n"
 "Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -47,7 +47,7 @@ msgstr "Plan de numérotation et opérationnel"
 msgid "Directory"
 msgstr "Répertoire"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "Test d'Echo"
 
@@ -65,7 +65,7 @@ msgstr ""
 "annuaire d'entreprise, suivi des appels (informations sur le dernier appel), "
 "test d'écho, horloge parlante et dicter le numéro de poste actuel."
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr "Dit votre Extension"
 
@@ -73,7 +73,7 @@ msgstr "Dit votre Extension"
 msgid "Speak Your Exten Number"
 msgstr "Dit votre Numéro d'Extension"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "Horloge Parlante"
 

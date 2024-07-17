@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 23:20-0400\n"
+"POT-Creation-Date: 2024-07-17 02:52-0400\n"
 "PO-Revision-Date: 2014-02-20 04:28+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/infoservices/ja/"
@@ -65,7 +65,7 @@ msgstr "ダイヤルプランと操作"
 msgid "Directory"
 msgstr "ディレクトリー"
 
-#: functions.inc.php:105 infoservices.i18n.php:18 install.php:8
+#: functions.inc.php:104 infoservices.i18n.php:18 install.php:8
 msgid "Echo Test"
 msgstr "エコーテスト"
 
@@ -83,7 +83,7 @@ msgstr ""
 "レクトリ、電話履歴の捜索（最終電話履歴）、エコー検査、音声クロック、音声内線"
 "番号。"
 
-#: functions.inc.php:286
+#: functions.inc.php:285
 msgid "Speak Extension"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Speak Your Exten Number"
 msgstr "音声内線番号"
 
-#: functions.inc.php:197 infoservices.i18n.php:22 install.php:9
+#: functions.inc.php:196 infoservices.i18n.php:22 install.php:9
 msgid "Speaking Clock"
 msgstr "音声クロック"
 
