@@ -55,7 +55,7 @@ if(!DB::IsError($globals)) {
 		out(_("migrated TIMEFORMAT to Advanced Settings"));
 		outn(_("deleting TIMEFORMAT from globals.."));
 		$res = $db->query($sql);
-		if(!DB::IsError($globals)) {
+		if(!DB::IsError($res)) {
 			out(_("done"));
 		} else {
 			out(_("could not delete"));
@@ -67,7 +67,7 @@ if(!DB::IsError($globals)) {
 //"kM"  => "24 Hour"
 $val = $current_format == 'kM' ? '24 Hour Format' : '12 Hour Format';
 
-$freepbx_conf =& freepbx_conf::create();
+$freepbx_conf = freepbx_conf::create();
 
 // TIMEFORMAT
 $set['value'] = $val;
